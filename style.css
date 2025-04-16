@@ -1,3 +1,6 @@
+html, body {
+    overflow-x: hidden!important;
+} 
 body{
     margin: 0;
     padding: 0;
@@ -9,7 +12,6 @@ body{
     width: 100%;
     background-color: #4AB8E4;
     color: white;
-    padding: 10px;
 }
 .header {
     display: flex;
@@ -55,6 +57,20 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-size: 18px;
+    font-family: sans-serif;
+    width: 80%;
+    justify-self: center;
+}
+
+.content h1,h2,p {
+    margin: 10px 0;
+}
+
+.content ul {
+    width: 50%;
+    text-align: left;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .footer {
@@ -63,4 +79,42 @@ body{
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+.auth-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.auth-buttons .btn-login,
+.auth-buttons .btn-signup {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons .btn-login {
+    background-color: #ffffff;
+    color: #4AB8E4;
+    border: 1px solid #4AB8E4;
+}
+
+.auth-buttons .btn-login:hover {
+    background-color: #4AB8E4;
+    color: white;
+}
+
+.auth-buttons .btn-signup {
+    background-color: #4AB8E4;
+    color: white;
+    border: 1px solid #4AB8E4;
+}
+
+.auth-buttons .btn-signup:hover {
+    background-color: #3a9dc2;
 }
