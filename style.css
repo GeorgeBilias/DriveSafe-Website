@@ -79,6 +79,8 @@ body{
     color: white;
     text-align: center;
     padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
 }
 
 .auth-buttons {
