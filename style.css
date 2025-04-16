@@ -105,8 +105,8 @@ body{
 }
 
 .auth-buttons .btn-login:hover {
-    background-color: #4AB8E4;
-    color: white;
+    background-color:#f0f0f0;
+    color: #4AB8E4;
 }
 
 .auth-buttons .btn-signup {
