@@ -118,3 +118,35 @@ body{
 .auth-buttons .btn-signup:hover {
     background-color: #3a9dc2;
 }
+
+/* Container Grid Layout */
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* Equal space on both sides */
+    align-items: center;
+    padding: 10px;
+    background-color: #4AB8E4;
+}
+
+/* Logo Styling */
+.header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align logo to the left */
+}
+
+/* Title Styling */
+.header .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Auth Buttons Styling */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end; /* Align buttons to the right */
+    align-items: center;
+}
