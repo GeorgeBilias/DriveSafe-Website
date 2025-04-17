@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Quiz</title>
     <link rel="icon" href="img/logo.png" type="image/x-icon">
+    
 </head>
 <body>
     <div class="container">
@@ -44,21 +45,28 @@
     </div>
 
     <div class="content">
-        <h2>Καλωσήρθατε στην Σελίδα</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem hic repudiandae sequi sit, provident ea excepturi sunt numquam animi est quis cumque iste aspernatur. Fugit eos aut distinctio reiciendis corrupti.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam autem animi vitae odit repudiandae sequi adipisci molestiae esse in facere, delectus beatae accusamus recusandae eius illo minima, natus pariatur laboriosam.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla cum voluptates at accusantium culpa repudiandae quisquam, quidem modi quis. Dolorem reprehenderit eligendi, dolores quod enim rem suscipit aliquam quibusdam similique!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique atque earum labore. Nulla eos pariatur dolore tempore illum error libero, doloremque inventore ad fugit repudiandae et voluptatum modi, optio porro!
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio sapiente tempora ut architecto ducimus soluta, necessitatibus ab ullam id voluptas eum quisquam harum deserunt ea ex, eligendi exercitationem beatae fuga.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repellat nesciunt sequi autem minus at, tempora facere, fuga esse distinctio quis error voluptatum id consequatur suscipit, beatae ipsa? Id, sit.\
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur mollitia voluptates deserunt magni harum aut vitae ipsum, consectetur aliquid nulla eligendi expedita dignissimos reprehenderit.
-        </p>
+        <h2>ΚΑΛΩΣ ΗΡΘΑΤΕ ΣΤΟ QUIZ</h2>
+        <p>Απαντήστε στις παρακάτω ερωτήσεις για να ελέγξετε τις γνώσεις σας σχετικά με την οδήγηση υπό την επήρεια αλκοόλ.</p>
+        <img src="img/ddad.png" alt="ddad" id="quiz-img">
+        <p id="insert-username">Παρακαλώ εισάγετε το όνομά σας για να ξεκινήσετε το quiz:</p>
+        <input type="text" id="userNameInput" placeholder="Το όνομά σας">
+        <button id="submitName" onclick="submitName()">ΥΠΟΒΟΛΗ</button>
+        <div id="welcomeMessage"></div>
+        <button id="startQuiz" style="display:none;" onclick="startQuiz()">ΞΕΚΙΝΗΣΤΕ</button>
+        <div id="quiz" style="display: none;">
+            <div id="question"></div>
+            <div id="choices"></div>
+            <div id="submit">
+                <button id="submit-button" onclick="submitAnswer()">ΥΠΟΒΟΛΗ</button>
+            </div>
+            <div id="results"></div>
+        </div>
     </div>
 
     <div class="footer">
         <p>Copyright &copy; 2025 [PageName]. All rights reserved.</p>
         <p>Σχεδιάστηκε από [TeamName]</p>
     </div>
-
+    <script src="code.js"></script>
 </body>
 </html>
