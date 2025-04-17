@@ -153,16 +153,19 @@ body{
     align-items: center;
 }
 #quiz-img {
+    margin-top: 10px;
     border-radius: 20px;
-    width: 30%;
+    width: 50%;
 }
-#startQuiz{
-    background-color: #333;
-    border: 1px solid black;
+#startQuiz {
+    background-color: #4AB8E4;
     color: white;
     border-radius: 15px;
     cursor: pointer;
     padding: 10px;
+    margin: 20px auto; /* Center the button horizontally */
+    display: block; /* Ensure it behaves like a block element */
+    text-align: center;
 }
 #userNameInput {
     background-color: white;
@@ -191,7 +194,7 @@ body{
     border: 2px solid black;
     border-radius: 10px;
     padding: 20px;
-    width: 30%;
+    width: 40%;
     margin: auto;
     margin-top: 2%;
 }
@@ -201,39 +204,50 @@ body{
     font-size: larger;
     font-weight: bold;
 }
-#choices{
-    margin-left: 2%;
-    gap: 10px;
-    margin-top: 2%;
-    text-align: left;
-
-}
-.choice{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+#choices {
+    display: flex; /* Use flexbox for better alignment */
+    flex-direction: column; /* Stack choices vertically */
+    gap: 15px; /* Add spacing between choices */
     margin-top: 20px;
-    margin-bottom: 20px;
+    text-align: left;
+    padding: 10px;
 }
-.choice input{
-    cursor: pointer;
+
+.choice {
+    display: flex; /* Align the input and label horizontally */
+    align-items: center; /* Vertically center the input and label */
+    gap: 10px; /* Add spacing between the input and label */
+    margin-bottom: 10px;
+}
+
+.choice input {
+    cursor: pointer; /* Add a pointer cursor for better UX */
+    margin: 0; /* Remove default margin */
+}
+
+.choice label {
+    font-size: 16px; /* Adjust font size for better readability */
+    line-height: 1.5; /* Improve spacing between lines */
+    cursor: pointer; /* Allow clicking on the label */
 }
 #submit-button{
-    background-color: #333;
+    background-color: #4AB8E4;
     border: 1px solid black;
     color: white;
     border-radius: 15px;
     cursor: pointer;
     padding: 10px;
+    justify-content: center;
 }
 #submitName{
-    background-color: #333;
+    background-color: #4AB8E4;
     border: 1px solid black;
     color: white;
     border-radius: 15px;
     cursor: pointer;
     padding: 10px;
+    justify-content: center;
 }
 #submitName:hover,#startQuiz:hover,#submit-button:hover,#start-quiz:hover,.bg-change-btn:hover,.contact-email:hover {
-    background-color: #575757;
+    background-color: #3a9dc2;
 }
