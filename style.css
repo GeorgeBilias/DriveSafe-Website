@@ -348,3 +348,45 @@ body{
 .close:hover {
     color: #4AB8E4;
 }
+fieldset legend{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+fieldset {
+    border: 2px solid #4AB8E4;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    background-color: #f9f9f9;
+}
+fieldset input[type="text"],
+fieldset input[type="email"]{
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+fieldset textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+fieldset input[type="submit"] {
+    background-color: #4AB8E4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+fieldset input[type="submit"]:hover {
+    background-color: #3a9dc2;
+}
