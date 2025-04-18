@@ -33,7 +33,7 @@
                 <ul>
                     <li><a href="Home.html">ΑΡΧΙΚΗ</a></li>
                     <li><a href="Blogs.html">BLOGS</a></li>
-                    <li><a href="About.html">ΣΧΕΤΙΚΑ ΜΕ ΜΑΣ</a></li>
+                    <li><a class='active' href="About.html">ΣΧΕΤΙΚΑ ΜΕ ΜΑΣ</a></li>
                     <li><a href="Contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
                     <li><a href="Quiz.html">QUIZ</a></li>
                 </ul>
@@ -44,15 +44,83 @@
     </div>
 
     <div class="content">
-        <h2>Καλωσήρθατε στην Σελίδα</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem hic repudiandae sequi sit, provident ea excepturi sunt numquam animi est quis cumque iste aspernatur. Fugit eos aut distinctio reiciendis corrupti.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam autem animi vitae odit repudiandae sequi adipisci molestiae esse in facere, delectus beatae accusamus recusandae eius illo minima, natus pariatur laboriosam.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla cum voluptates at accusantium culpa repudiandae quisquam, quidem modi quis. Dolorem reprehenderit eligendi, dolores quod enim rem suscipit aliquam quibusdam similique!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique atque earum labore. Nulla eos pariatur dolore tempore illum error libero, doloremque inventore ad fugit repudiandae et voluptatum modi, optio porro!
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio sapiente tempora ut architecto ducimus soluta, necessitatibus ab ullam id voluptas eum quisquam harum deserunt ea ex, eligendi exercitationem beatae fuga.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repellat nesciunt sequi autem minus at, tempora facere, fuga esse distinctio quis error voluptatum id consequatur suscipit, beatae ipsa? Id, sit.\
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur mollitia voluptates deserunt magni harum aut vitae ipsum, consectetur aliquid nulla eligendi expedita dignissimos reprehenderit.
+        <p>Το συγκεκριμένο site δημιουργήθηκε στο πλαίσιο του μαθήματος "Εισαγωγή στους Η/Υ - Παιδαγωγικές Εφαρμογές στην Εκπαίδευση" κατά το ακαδημαϊκό έτος 2024-2025.</p>
+        <p>
+            Το site αυτό δημιουργήθηκε με σκοπό την ενημέρωση και ευαισθητοποίηση του κοινού σχετικά με τους κινδύνους της οδήγησης υπό την επήρεια αλκοόλ.<br><br> Οι βασικοί στόχοι μας περιλαμβάνουν:
         </p>
+        <ul>
+            <li>Παροχή αξιόπιστων πληροφοριών για τα όρια αλκοόλ και τη νομοθεσία.</li>
+            <li>Ενημέρωση για τις συνέπειες της οδήγησης υπό την επήρεια αλκοόλ.</li>
+            <li>Ενίσχυση της ευαισθητοποίησης μέσω διαδραστικών εργαλείων, όπως το quiz.</li>
+            <li>Προώθηση ασφαλών εναλλακτικών για τη μετακίνηση μετά την κατανάλωση αλκοόλ.</li>
+        </ul>
+        <p>
+            Ελπίζουμε ότι το site μας θα συμβάλει στη μείωση των τροχαίων ατυχημάτων και θα ενισχύσει την υπεύθυνη οδική συμπεριφορά.
+        </p>
+        <p>Ευχαριστούμε για την επίσκεψή σας!</p>
+
+        <div class="table-container">
+                <table id="contact">
+                    <tr>
+                        <th>ΟΝΟΜΑΤΕΠΩΝΥΜΟ</th>
+                        <th>ΑΡΙΘΜΟΣ ΜΗΤΡΩΟΥ</th>
+                        <th>EMAIL</th>
+                        <th>SOCIAL</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>ΜΠΙΛΙΑΣ ΓΕΩΡΓΙΟΣ</td>
+                        <td>3200278</td>
+                        <td><a href= "mailto:p3200278@aueb.gr">p3200278@aueb.gr</a></td>
+                        <td>
+                            <a href="https://www.linkedin.com/in/george-bilias-02/"><img src="img/logos/linkedin.png" alt="linkedin"  height="40" width="40"></a>
+                            <a href="https://github.com/GeorgeBilias"><img src="img/logos/github.png" alt="github" height="40" width="40"></a>
+                        </td>
+                        <td><button class="contact-email" onclick="sendEmail('p3200278@aueb.gr')">ΕΠΙΚΟΙΝΩΝΙΑ</button></td>
+                    </tr>
+                    <tr>
+                        <td>ΕΛΕΝΗ ΓΚΟΥΝΤΕΛΙΤΣΑ</td>
+                        <td>4210019</td>
+                        <td><a href= "mailto:e4210019@aueb.gr">e4210019@aueb.gr</a></td>
+                        <td>
+                            
+                        </td>
+                        <td><button class="contact-email" onclick="sendEmail('e4210019@aueb.gr')">ΕΠΙΚΟΙΝΩΝΙΑ</button></td>
+                    </tr>
+                    <tr>
+                        <td>ΒΑΣΙΛΙΚΗ ΠΑΠΑΓΕΩΡΓΙΟΥ</td>
+                        <td>4210092</td>
+                        <td><a href= "mailto:e4210092@aueb.gr">e4210092@aueb.gr</a></td>
+                        <td>
+                            
+                        </td>
+                        <td><button class="contact-email" onclick="sendEmail('e4210092@aueb.gr')">ΕΠΙΚΟΙΝΩΝΙΑ</button></td>
+                    </tr>
+                    <tr>
+                        <td>ΠΑΡΑΣΚΕΥΑΣ ΒΙΔΑΚΗΣ</td>
+                        <td>7210221</td>
+                        <td><a href= "mailto:l7210221@aueb.gr">l7210221@aueb.gr</a></td>
+                        <td>
+                            
+                        </td>
+                        <td><button class="contact-email" onclick="sendEmail('l7210221@aueb.gr')">ΕΠΙΚΟΙΝΩΝΙΑ</button></td>
+                    </tr>
+                    <tr>
+                        <td>ΜΠΟΥΡΑΖΑΝΑΣ ΠΑΝΑΓΙΩΤΗΣ</td>
+                        <td>3200268</td>
+                        <td><a href= "mailto:p3200268@aueb.gr">p3200268@aueb.gr</a></td>
+                        <td>
+                            <a href="https://www.linkedin.com/in/panagiotis-b-0bb929295/"><img src="img/logos/linkedin.png" alt="linkedin"  height="40" width="40"></a>
+                            <a href="https://github.com/panos-bou"><img src="img/logos/github.png" alt="github" height="40" width="40"></a>
+                        </td>
+                        <td><button class="contact-email" onclick="sendEmail('p3200268@aueb.gr')">ΕΠΙΚΟΙΝΩΝΙΑ</button></td>
+                    </tr>
+                    
+                </table>
+
+            </div>
+
+
     </div>
 
     <div class="footer">
