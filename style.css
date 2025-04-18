@@ -348,8 +348,10 @@ body{
 .close:hover {
     color: #4AB8E4;
 }
-#auth-content{
+#auth-content h2{
     color: black;
+    font-family: sans-serif;
+    margin-bottom: 10%;
 }
 #auth-content input[type='text'],
 #auth-content input[type='password'],
