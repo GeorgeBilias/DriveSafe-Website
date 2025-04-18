@@ -21,8 +21,17 @@
             </div>
 
             <div class="auth-buttons">
-                <a href="Login.html" class="btn-login">Σύνδεση</a>
-                <a href="Signup.html" class="btn-signup">Εγγραφή</a>
+                <button id="btn-login" class="btn-login">Σύνδεση</button>
+                <button id="btn-signup" class="btn-signup">Εγγραφή</button>
+            </div>
+
+            <div id="auth-modal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span id="close-modal" class="close">&times;</span>
+                    <div id="auth-content">
+                        
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -60,5 +69,6 @@
         <p>Σχεδιάστηκε από [TeamName]</p>
     </div>
 
+    <script src="code.js"></script>
 </body>
 </html>

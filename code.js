@@ -183,3 +183,48 @@ function displayResults() { // Εμφάνισε τα αποτελέσματα
     document.getElementById('choices').style.display = 'none'; // Κρύψε τις επιλογές
     document.getElementById('submit').style.display = 'none'; // Κρύψε το κουμπί για υποβολή απάντησης
 }
+const loginButton = document.getElementById('btn-login');
+const signupButton = document.getElementById('btn-signup');
+const modal = document.getElementById('auth-modal');
+const modalContent = document.getElementById('auth-content');
+const closeModal = document.getElementById('close-modal');
+
+function openModal(content) {
+    modalContent.innerHTML = content; 
+    modal.style.display = 'flex'; 
+}
+
+closeModal.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
+
+loginButton.addEventListener('click', () => {
+    const loginForm = `
+        <h2>Σύνδεση</h2>
+        <form>
+            <input type="text" placeholder="Όνομα Χρήστη" required><br><br>
+            <input type="password" placeholder="Κωδικός" required><br><br>
+            <button type="submit" class="btn-login">Σύνδεση</button>
+        </form>
+    `;
+    openModal(loginForm);
+});
+
+signupButton.addEventListener('click', () => {
+    const signupForm = `
+        <h2>Εγγραφή</h2>
+        <form>
+            <input type="text" placeholder="Όνομα Χρήστη" required><br><br>
+            <input type="email" placeholder="Email" required><br><br>
+            <input type="password" placeholder="Κωδικός" required><br><br>
+            <button type="submit" class="btn-signup">Εγγραφή</button>
+        </form>
+    `;
+    openModal(signupForm);
+});
