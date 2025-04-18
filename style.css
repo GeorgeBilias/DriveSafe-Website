@@ -348,6 +348,31 @@ body{
 .close:hover {
     color: #4AB8E4;
 }
+#auth-content{
+    color: black;
+}
+#auth-content input[type='text'],
+#auth-content input[type='password'],
+#auth-content input[type='email']{
+    width: 50%;
+    padding: 3px;
+    margin: 3px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+#auth-content button[type="submit"]{
+    background-color: #4AB8E4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#auth-content button[type="submit"]:hover{
+    background-color: #3a9dc2;
+}
 fieldset legend{
     font-size: 20px;
     font-weight: bold;
