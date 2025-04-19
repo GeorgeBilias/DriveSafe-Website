@@ -204,27 +204,56 @@ window.addEventListener('click', (event) => {
     }
 });
 
+
 loginButton.addEventListener('click', () => {
     const loginForm = `
         <h2>Σύνδεση</h2>
-        <form>
+        <form id="login-form">
             <input type="text" placeholder="Όνομα Χρήστη" required><br><br>
             <input type="password" placeholder="Κωδικός" required><br><br>
-            <button type="submit" class="btn-login">Σύνδεση</button>
+            <button type="submit" class="login">Σύνδεση</button>
         </form>
     `;
     openModal(loginForm);
+
+    
+    const loginFormElement = document.getElementById('login-form');
+    const logoutButton = document.getElementById('btn-logout');
+    loginFormElement.addEventListener('submit', (event) => {
+        event.preventDefault(); 
+        loginButton.style.display = 'none';
+        logoutButton.style.display = 'block'; 
+        signupButton.style.display = 'none';
+        
+        modal.style.display = 'none';
+    });
 });
+
 
 signupButton.addEventListener('click', () => {
     const signupForm = `
         <h2>Εγγραφή</h2>
-        <form>
+        <form id="signup-form">
             <input type="text" placeholder="Όνομα Χρήστη" required><br><br>
             <input type="email" placeholder="Email" required><br><br>
             <input type="password" placeholder="Κωδικός" required><br><br>
-            <button type="submit" class="btn-signup">Εγγραφή</button>
+            <button type="submit" class="signup">Εγγραφή</button>
         </form>
     `;
     openModal(signupForm);
+
+    
+    const signupFormElement = document.getElementById('signup-form');
+    signupFormElement.addEventListener('submit', (event) => {
+        event.preventDefault(); 
+        loginButton.style.display = 'none';
+        signupButton.style.display = 'none';
+        modal.style.display = 'none'; 
+    });
 });
+const logoutButton = document.getElementById('btn-logout');
+logoutButton.addEventListener('click', () => {
+    loginButton.style.display = 'block'; 
+    logoutButton.style.display = 'none'; 
+    signupButton.style.display = 'block'; 
+}); 

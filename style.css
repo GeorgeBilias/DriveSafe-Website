@@ -96,7 +96,7 @@ body{
 }
 
 .auth-buttons .btn-login,
-.auth-buttons .btn-signup {
+.auth-buttons .btn-signup,.btn-logout {
     text-decoration: none;
     padding: 8px 15px;
     border-radius: 5px;
@@ -105,13 +105,13 @@ body{
     transition: background-color 0.3s ease;
 }
 
-.auth-buttons .btn-login {
+.auth-buttons .btn-login,.btn-logout {
     background-color: #ffffff;
     color: #4AB8E4;
     border: 1px solid #4AB8E4;
 }
 
-.auth-buttons .btn-login:hover {
+.auth-buttons .btn-login:hover,.btn-logout:hover {
     background-color:#f0f0f0;
     color: #4AB8E4;
 }
@@ -150,8 +150,11 @@ body{
     align-items: center;
     cursor: pointer;
 }
-.btn-login, .btn-signup {
+.btn-login, .btn-signup, .btn-logout {
     cursor: pointer;
+}
+.btn-logout{
+    display: none;
 }
 #quiz-img {
     margin-top: 10px;
