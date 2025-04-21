@@ -70,6 +70,10 @@ body{
 .content h1,h2,p {
     margin: 10px 0;
 }
+.content h1{
+    color: #3a9dc2;
+    text-decoration: underline;
+}
 
 .content ul {
     width: 50%;
