@@ -257,3 +257,22 @@ logoutButton.addEventListener('click', () => {
     logoutButton.style.display = 'none'; 
     signupButton.style.display = 'block'; 
 }); 
+
+document.addEventListener('DOMContentLoaded', function() {
+    var accessibilityBtn = document.getElementById('accessibility-btn');
+    // On page load, check localStorage and set high-contrast if needed
+    if (localStorage.getItem('highContrast') === 'on') {
+        document.body.classList.add('high-contrast');
+    }
+    if (accessibilityBtn) {
+        accessibilityBtn.addEventListener('click', function() {
+            document.body.classList.toggle('high-contrast');
+            // Save preference
+            if (document.body.classList.contains('high-contrast')) {
+                localStorage.setItem('highContrast', 'on');
+            } else {
+                localStorage.setItem('highContrast', 'off');
+            }
+        });
+    }
+});

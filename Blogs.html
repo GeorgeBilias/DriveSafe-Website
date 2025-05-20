@@ -23,6 +23,7 @@
             <div class="auth-buttons">
                 <button id="btn-login" class="btn-login">Σύνδεση</button>
                 <button id="btn-signup" class="btn-signup">Εγγραφή</button>
+                <button id="btn-logout" class="btn-logout">Αποσύνδεση</button>
             </div>
 
             <div id="auth-modal" class="modal" style="display: none;">
@@ -93,6 +94,16 @@
             </div>
         </div>
     </div>
+
+        <!-- Accessibility Button: Wheelchair Icon -->
+    <button id="accessibility-btn" aria-label="Accessibility Options" style="position: fixed; bottom: 24px; right: 24px; z-index: 1000; background: #0057b8; color: white; border: none; border-radius: 50%; width: 56px; height: 56px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); cursor: pointer;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="11" cy="4" r="2" fill="white"/>
+            <path d="M10 6v4h4v2h-4v2h5a2 2 0 0 1 2 2v2" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="17" cy="20" r="2" fill="white"/>
+            <path d="M10 20a4 4 0 1 1 0-8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </button>
 
     <div class="footer">
         <p>Copyright &copy; 2025 DriveSafe. All rights reserved.</p>

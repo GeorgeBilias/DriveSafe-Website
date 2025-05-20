@@ -424,3 +424,41 @@ fieldset input[type="submit"] {
 fieldset input[type="submit"]:hover {
     background-color: #3a9dc2;
 }
+
+/* High contrast mode for accessibility */
+.high-contrast,
+.high-contrast body,
+.high-contrast .container,
+.high-contrast .content,
+.high-contrast .footer,
+.high-contrast .header,
+.high-contrast .nav-bar,
+.high-contrast fieldset,
+.high-contrast .modal-content,
+.high-contrast #quiz,
+.high-contrast .blog-post,
+.high-contrast input,
+.high-contrast textarea,
+.high-contrast select,
+.high-contrast button {
+    background: #000 !important;
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+.high-contrast a,
+.high-contrast a:visited {
+    color: #ffd700 !important;
+}
+
+.high-contrast .blog-post,
+.high-contrast .modal-content,
+.high-contrast fieldset,
+.high-contrast #quiz {
+    box-shadow: 0 0 0 2px #fff !important;
+}
+
+.high-contrast img,
+.high-contrast svg {
+    filter: grayscale(1) contrast(1.5) !important;
+}
