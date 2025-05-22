@@ -462,3 +462,107 @@ fieldset input[type="submit"]:hover {
 .high-contrast svg {
     filter: grayscale(1) contrast(1.5) !important;
 }
+
+.footer {
+    width: 100%;
+    background-color: #4AB8E4;
+    color: white;
+    text-align: center;
+    padding: 20px 10px 10px 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.footer-email {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: color 0.2s;
+}
+
+.footer-email:hover {
+    text-decoration: underline;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-icons a {
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.footer-icons a:hover {
+    transform: scale(1.15);
+}
+
+.footer-icons img {
+    height: 36px;
+    width: 36px;
+    border-radius: 8px;
+    background: white;
+    padding: 3px;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+}
+
+.footer-icons img:hover {
+    box-shadow: 0 2px 8px;
+}
+
+/* For social icons in the table and footer, both <img> and <i> */
+.social-icon,
+.footer-icons img,
+.footer-icons i {
+    height: 36px;
+    width: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 3px;
+    font-size: 28px; /* For <i> font icons */
+    color: #0057b8;  /* Default icon color */
+}
+
+.social-icon:hover,
+.footer-icons img:hover,
+.footer-icons i:hover {
+    transform: scale(1.15);
+}
+/* Brand colors for footer social icons */
+.instagram-icon {
+    color: #E4405F !important;
+    background: white !important;
+}
+.instagram-icon:hover {
+    color: #fff !important;
+    background: #E4405F !important;
+}
+
+.facebook-icon {
+    color: #1877F3 !important;
+    background: white !important;
+}
+.facebook-icon:hover {
+    color: #fff !important;
+    background: #1877F3 !important;
+}
