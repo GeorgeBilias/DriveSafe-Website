@@ -582,7 +582,7 @@ fieldset input[type="submit"]:hover {
 .guidelines-section h1, 
 .guidelines-section h2, 
 .guidelines-section h3 {
-    color: #0057b8;
+    color: #4AB8E4;
     margin-top: 18px;
     margin-bottom: 12px;
     font-family: 'Segoe UI', Arial, sans-serif;
@@ -603,7 +603,7 @@ fieldset input[type="submit"]:hover {
 
 .guidelines-section hr {
     border: none;
-    border-top: 2px solid #0057b8;
+    border-top: 2px solid #4AB8E4;
     margin: 24px 0;
     width: 60%;
     margin-left: auto;
@@ -620,5 +620,98 @@ fieldset input[type="submit"]:hover {
     .guidelines-section {
         padding: 14px 6px;
         font-size: 0.98em;
+    }
+}
+
+/* Guidelines Cards */
+.guidelines-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin: 32px 0 24px 0;
+}
+
+.guideline-card {
+    flex: 1 1 260px;
+    min-width: 220px;
+    background: #eaf4fb;
+    border-radius: 14px;
+    padding: 22px 18px 18px 18px;
+    box-shadow: 0 2px 8px rgba(0,87,184,0.07);
+    margin-bottom: 10px;
+    text-align: center;
+    transition: transform 0.15s, box-shadow 0.15s;
+    border: 1.5px solid #d1e6f7;
+}
+.guideline-card:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 4px 16px rgba(0,87,184,0.13);
+    border-color: #4AB8E4;
+}
+.guideline-card i {
+    font-size: 34px;
+    color: #4AB8E4;
+    margin-bottom: 8px;
+}
+.guideline-card h3 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 1.18em;
+    color: #4AB8E4;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+.guideline-card p {
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+.guidelines-section .useful-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+.guidelines-section .useful-link {
+    flex: 1 1 260px;
+    min-width: 220px;
+    background: #fff;
+    border: 1.5px solid #4AB8E4;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #4AB8E4;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,87,184,0.05);
+    transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+    font-size: 1.07em;
+    margin-bottom: 10px;
+    display: block;
+}
+.guidelines-section .useful-link:hover {
+    background: #eaf4fb;
+    color: #3a9dc2;
+    box-shadow: 0 4px 16px rgba(0,87,184,0.13);
+    text-decoration: none;
+}
+.guidelines-section .useful-link i {
+    font-size: 28px;
+    margin-bottom: 8px;
+    display: block;
+    color: #4AB8E4;
+}
+
+@media (max-width: 900px) {
+    .guidelines-cards, .guidelines-section .useful-links {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+    .guideline-card, .guidelines-section .useful-link {
+        min-width: 0;
+        width: 95%;
     }
 }
