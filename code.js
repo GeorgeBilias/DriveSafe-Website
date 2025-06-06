@@ -40,15 +40,6 @@ const questions = [
         ],
         correctAnswer: 0 // Η σωστή απάντηση είναι η πρώτη επιλογή
     },
-   // {
-   //     question: "Έχετε οδηγήσει ποτέ υπό την επήρεια αλκοόλ (πάνω από το νόμιμο όριο);",
-   //     choices: [
-   //         "Ναι, πολλές φορές",
-   //         "Ναι, αλλά πολύ σπάνια",
-   //         "Όχι, ποτέ"
-   //     ],
-   //     correctAnswer: 2 // Η σωστή απάντηση είναι η τρίτη επιλογή
-   // },
     {
         question: "Ποιοι οδηγοί υπόκεινται σε αυστηρότερα όρια αλκοόλ σύμφωνα με τον Κ.Ο.Κ.;",
         choices: [
@@ -58,15 +49,6 @@ const questions = [
         ],
         correctAnswer: 1 // Η σωστή απάντηση είναι η δεύτερη επιλογή
     },
-  //  {
-  //      question: "Πιστεύετε ότι η επιβολή προστίμων και ποινών για οδήγηση υπό την επήρεια αλκοόλ είναι επαρκής στην Ελλάδα;",
-  //      choices: [
-  //          "Ναι, είναι αυστηρές και αποτρεπτικές",
-  //          "Όχι, χρειάζονται αυστηρότερες ποινές",
-  //          "Όχι, είναι υπερβολικά αυστηρές"
-  //      ],
-   //     correctAnswer: 1 // Η σωστή απάντηση είναι η δεύτερη επιλογή
-   // },
     {
         question: "Ποια είναι η προσωπική σας στάση απέναντι στην οδήγηση μετά την κατανάλωση αλκοόλ;",
         choices: [
@@ -83,26 +65,8 @@ const questions = [
             "Με φίλο που δεν έχει πιει",
             "Οδηγώ ο ίδιος/η ίδια"
         ],
-        correctAnswer: [0, 1] // Η σωστή απάντηση είναι η πρώτη επιλογή
+        correctAnswer: [0, 1] // Η σωστή απάντηση είναι η πρώτη ή και η δεύτερη επιλογή
     },
-    //{
-    //    question: "Πιστεύετε ότι η ενημέρωση των οδηγών για το αλκοόλ και την οδήγηση είναι επαρκής στην Ελλάδα;",
-    //    choices: [
-    //        "Ναι, υπάρχουν αρκετές ενημερωτικές καμπάνιες",
-    //        "Όχι, χρειάζεται περισσότερη εκπαίδευση και καμπάνιες",
-    //        "Δεν με ενδιαφέρει"
-    //    ],
-    //    correctAnswer: 1 // Η σωστή απάντηση είναι η δεύτερη επιλογή
-    //},
-   // {
-   //     question: "Έχετε περάσει ποτέ από αλκοτέστ της Τροχαίας;",
-   //     choices: [
-   //         "Ναι, και βρέθηκα εντός των ορίων",
-   //         "Ναι, και βρέθηκα εκτός των ορίων",
-   //         "Όχι, ποτέ"
-   //     ],
-   //     correctAnswer: 0 // Η σωστή απάντηση είναι η πρώτη επιλογή
-   // },
     {
         question: "Ποια από τις παρακάτω επιλογές επηρεάζει περισσότερο την επίδραση του αλκοόλ στον οργανισμό;",
         choices: [
@@ -260,14 +224,14 @@ logoutButton.addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded', function() {
     var accessibilityBtn = document.getElementById('accessibility-btn');
-    // On page load, check localStorage and set high-contrast if needed
+
     if (localStorage.getItem('highContrast') === 'on') {
         document.body.classList.add('high-contrast');
     }
     if (accessibilityBtn) {
         accessibilityBtn.addEventListener('click', function() {
             document.body.classList.toggle('high-contrast');
-            // Save preference
+            
             if (document.body.classList.contains('high-contrast')) {
                 localStorage.setItem('highContrast', 'on');
             } else {

@@ -526,7 +526,6 @@ fieldset input[type="submit"]:hover {
     box-shadow: 0 2px 8px;
 }
 
-/* For social icons in the table and footer, both <img> and <i> */
 .social-icon,
 .footer-icons img,
 .footer-icons i {
@@ -539,8 +538,8 @@ fieldset input[type="submit"]:hover {
     justify-content: center;
     border-radius: 8px;
     padding: 3px;
-    font-size: 28px; /* For <i> font icons */
-    color: #0057b8;  /* Default icon color */
+    font-size: 28px; 
+    color: #0057b8; 
 }
 
 .social-icon:hover,
@@ -548,7 +547,7 @@ fieldset input[type="submit"]:hover {
 .footer-icons i:hover {
     transform: scale(1.15);
 }
-/* Brand colors for footer social icons */
+
 .instagram-icon {
     color: #E4405F !important;
     background: white !important;
@@ -567,7 +566,7 @@ fieldset input[type="submit"]:hover {
     background: #1877F3 !important;
 }
 
-/* Guidelines Section Only */
+
 .guidelines-section {
     background: #f7faff;
     border-radius: 18px;
@@ -623,7 +622,6 @@ fieldset input[type="submit"]:hover {
     }
 }
 
-/* Guidelines Cards */
 .guidelines-cards {
     display: flex;
     flex-wrap: wrap;
@@ -686,7 +684,7 @@ fieldset input[type="submit"]:hover {
     color: #4AB8E4;
     font-weight: bold;
     box-shadow: 0 2px 8px rgba(0,87,184,0.05);
-    transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+    transition: background-color 0.2s, box-shadow 0.2s, color 0.2s;
     font-size: 1.07em;
     margin-bottom: 10px;
     display: block;
