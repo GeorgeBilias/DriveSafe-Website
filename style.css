@@ -27,15 +27,14 @@ body{
     text-align: center;
     font-size: 18px;
     padding: 8px;
-    
 }
 .header .title h1 {
-    font-family: 'Nunito', Arial, sans-serif;
+    font-family: 'Timmana', Arial, sans-serif;
     font-size: 2.7em;
     letter-spacing: 2px;
     color: #fff;
     margin: 0;
-    padding: 14px 38px;
+    padding: 10px 32px;
     background: rgba(74,184,228,0.85);
     border-radius: 16px;
     box-shadow: 0 2px 12px rgba(74,184,228,0.12);
@@ -240,7 +239,6 @@ body{
 }
 #quiz {
     background-color: #f9f9f9;
-    border: 2px solid black;
     border-radius: 10px;
     padding: 20px;
     width: 40%;
@@ -280,7 +278,7 @@ body{
 }
 #submit-button{
     background-color: #4AB8E4;
-    border: 1px solid black;
+    border-color: #4AB8E4;
     color: white;
     border-radius: 15px;
     cursor: pointer;
@@ -289,7 +287,7 @@ body{
 }
 #submitName,.contact-email{
     background-color: #4AB8E4;
-    border: 1px solid black;
+    border-color: #4AB8E4;
     color: white;
     border-radius: 15px;
     cursor: pointer;
@@ -320,8 +318,14 @@ body{
     color: black;
     text-decoration: none; 
 }
+#contact td {
+    color: #4AB8E4;
+}
+#contact td a {
+    color: #4AB8E4; 
+}
 #contact a:hover {
-    color: black; 
+    color: #3a9dc2; 
     text-decoration: underline;
 }
 .blog-posts {
